@@ -9,14 +9,14 @@ body{
 }
 /* classes gerais */
 h1{
-    font-size: 1rem;
+    font-size: 2rem;
 }
 .cor-geral{
-    background-color: aliceblue;
-    max-width: 1100px;
+    background-color: rgb(48, 47, 47);
+    max-width: 900px;
     margin: auto;
-    margin-top: 5%;
-    border-radius: 20px;
+    margin-top: 3%;
+    border-radius: 20px;  
 }
 /* SECTION 1 */
 .interface{
@@ -50,7 +50,6 @@ h1{
     margin-top: 3%;
 }
 .apresentacao{
-    background-color:rgb(38, 38, 157);  
     width: 600px;
     text-align: center;
     padding: 10px 10px;
@@ -59,30 +58,28 @@ h1{
 }
 /* SECTION 3 */
 .produtos{
-    margin-top: 5%;
-    background-color: rgb(38, 38, 157);
-    height: 200px;
+    height: 150px;
+    color: white;
 }
 .nossos-produtos{
     display: flex;
-    margin-left: 14%;
+    align-items: center;
     visibility: hidden;
+    justify-content: center;
 }
 .nossos-produtos ul{
-    background-color: white;
+    background-color: rgb(38, 38, 157);
     margin: 30px 30px;
-    padding: 30px 20px;
+    padding: 30px 30px;
     box-shadow: 2px 2px 20px black;
     border-radius: 10px;
 }
-.nossos-produtos ul li{
-    list-style-type: none;
-}
 .produtos h3{
-    padding-top: 60px;
-    margin-left: 14%;
-    color: white;
-    font-size: 1.5rem;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
 }
 /* SECTION 4 */
 nav{
@@ -90,7 +87,6 @@ nav{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding-top: 100px;
 }
 nav ul li{
     margin: 50px;
@@ -104,7 +100,6 @@ nav ul li{
 }
 nav ul li:hover{
     transform: translateY(-10px);
-
 }
 nav ul li a{
     text-decoration: none;
@@ -113,46 +108,39 @@ nav ul li a{
 }
 /* SECTION 5 */
 span{
-    color: black;
-    background-color: white;
     padding: 10px 10px;
     border-radius:10px ;
     box-shadow: 2px 2px 20px black;
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-top: 150px;
+    color: white;
 }
 @media screen and (max-width: 750px){
-    body{
-        background-color: white;
+    .cor-geral{
+        width: 100%;
+        border-radius: 0px;
+        margin-top: 0;
     }
     .logo img{
         width: 250px;
     }
-    h1{
-        font-size: 15px;
-    }
-    .apresentacao{
-        width: 350px;
-        margin-top: 5%;
-    }
     .nossos-produtos{
-        margin-left: 5%;
-        font-size: 10px
-    }
-    .produtos h3{
-        margin-left:5%;
+        font-size: 10px;
+        flex-direction: column;
+        display: flex;
     }
     .nossos-produtos ul{
-        margin: 40px 10px;
-        padding: 20px 10px;
+        margin: 10px 10px;
+        padding: 20px 50px;
+        font-size: 1rem;
     }
     span{
         width: 100%;
-        font-size: 15px;
-    }
-    nav{
-        padding-top: 30px;
+        font-size: 1rem;
+        margin-top: 350px;
+        text-align: center;
     }
     nav ul li{
         margin: 40px;
